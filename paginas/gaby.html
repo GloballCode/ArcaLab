@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil ArcaLab - Gaby Barros</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="ArcaLab2.png">
+        <style>
+        .ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.roboto-desc {
+  font-family: "Roboto", sans-serif;
+}
+.times-footer {
+  font-family: "Times New Roman", Times, serif;
+}
+
+        header {
+            width: 100%;
+            background-color: #ffffffdd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            position: sticky;  
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .logo img {
+            width: 40px;
+            height: auto;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #000000dd; 
+        }
+
+        header nav ul li a:hover {
+            color: #000000; 
+        }
+
+        header h2 {
+            font-family: "Ubuntu", sans-serif;
+            margin: 0;
+        }
+
+        body {
+            background-color: #81bcae;
+            font-family: "Ubuntu", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+        }
+        .post {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: box-shadow 0.2s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .post:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        h1, p, h3, h4, h5 {
+            text-align: center;
+        }
+        .post h2 {
+            text-align: center;
+        }
+        img {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+            margin: 0 auto;
+        }  
+        .zoom-img {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#imgModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#imgModal img {
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+        </style>
+    </head>
+    <body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="ArcaLab2.png" alt="Logo do ArcaLab">
+            </a>
+            <h2>Blog do ArcaLab</h2>
+        </div>
+    </header>
+        <h1>Perfil</h1>
+        <img src="fotoGaby..jpg" alt="Foto de Gaby vestida de cientista" style="width: 300px; height: auto; margin-bottom: 20px;">
+        <h2>Gabrielly Barros</h2>
+        <div class="post">
+            <h4>Idade: 13 anos</h4>
+            <h4>Estado: Rio Grande do Norte</h4>
+        </div>
+        <div class="post">
+            <h3>Hobbies:</h3>
+            <h4>Programação, animação, resolver cubos mágicos</h4>
+        </div>
+        <div>
+            <h2>Minha ficha:</h2>
+            <img src="cartaoGaby.png" 
+     alt="Ficha ArcaLab de Gaby Barros" 
+     class="zoom-img"
+     style="width: 300px; height: auto; margin-bottom: 20px;">
+            <p>Clique na imagem para ampliar</p>
+        </div>
+        <h2>Posts e projetos de Gaby Barros:</h2>
+        <div class="post" id="post-solo">
+            <img src="https://nutricaodesafras.com.br/wp-content/uploads/2023/05/saude-do-solo.jpg" alt="Imagem do Solo" width="400" height="300">
+            <h2>O Solo</h2>
+            <p class="roboto-desc">O solo é um recurso natural essencial para a vida na Terra. Ele é formado por partículas minerais, matéria orgânica, água e ar, e desempenha um papel crucial na agricultura, na filtragem da água e no suporte à biodiversidade.</p>
+        </div>
+        <div class="post" id="post-ciclo">
+            <img src="https://arvoreagua.org/wp-content/uploads/2023/07/IMG-20230612-WA0007.jpg" alt="Ciclo da Água" width="400" height="400">
+            <h2>O Ciclo da Água</h2>
+            <p class="roboto-desc">O ciclo da água é um processo natural que envolve a evaporação, condensação e precipitação da água na Terra.</p>
+        </div>
+<div id="imgModal">
+  <img id="modalContent">
+</div>
+
+<script>          
+  const img = document.querySelector(".zoom-img");
+  const modal = document.getElementById("imgModal");
+  const modalContent = document.getElementById("modalContent");
+
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalContent.src = this.src;
+  }
+
+  modal.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  document.getElementById('post-solo').onclick = function() {
+    window.location.href = 'solo.html';
+  };
+  document.getElementById('post-ciclo').onclick = function() {
+    window.location.href = 'ciclo.html';
+  };
+</script>
+    </body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagens/ArcaLab2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#386490">
+    <title>ArcaLab - O Ciclo da Água</title>
+    <meta name="author" content="Gabrielly Barros">
+    <meta name="description" content="Aprenda sobre o ciclo da água, suas fases e importância para a vida na Terra.">
+    <meta name="keywords" content="ciclo da água, evaporação, condensação, precipitação, meio ambiente">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #d8e4ee;
+        min-height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+      }
+
+      /* Cabeçalho */
+      header {
+        width: 100%;
+        background-color: #ffffffdd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      header .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      header .logo img {
+        width: 40px;
+        height: auto;
+      }
+      header h2 {
+        font-family: "Ubuntu", sans-serif;
+        margin: 0;
+        color: #386490;
+      }
+      header nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      header nav a:hover {
+        color: #2d6a4f;
+      }
+
+      .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      h1, h2 {
+        color: #386490;
+        text-align: center;
+      }
+      p {
+        color: #2d3a47;
+        text-align: center;
+      }
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+        max-width: 600px;
+        margin: 0 auto 20px auto;
+      }
+        img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: block;
+            margin: 0 auto;
+            border-radius: 6px;
+        }
+      .pergunta {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(56,100,144,0.08);
+        padding: 16px 24px;
+        margin: 16px 0;
+        max-width: 500px;
+        width: 100%;
+        transition: border 0.2s, background 0.2s;
+      }
+      .pergunta.correta {
+        border: 2px solid #4caf50;
+        background: #e8f5e9;
+      }
+      .pergunta.errada {
+        border: 2px solid #f44336;
+        background: #ffebee;
+      }
+      .pergunta p {
+        margin-bottom: 10px;
+        color: #386490;
+        text-align: left;
+      }
+      .pergunta label {
+        display: block;
+        margin-bottom: 6px;
+        cursor: pointer;
+        color: #2d3a47;
+      }
+      button {
+        background: #386490;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 28px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin: 24px 0 12px 0;
+        transition: background 0.2s;
+      }
+      button:hover {
+        background: #27405e;
+      }
+      #reset-btn {
+        background: #aaa;
+        margin-left: 10px;
+      }
+      #reset-btn:hover {
+        background: #888;
+      }
+      #resultado {
+        font-weight: bold;
+        color: #386490;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+              header {
+            width: 100%;
+            background-color: #ffffffdd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            position: sticky;  /* Fica fixo ao rolar */
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .logo img {
+            width: 40px;
+            height: auto;
+        }
+
+        header h2, p {
+            font-family: "Ubuntu", sans-serif;
+            margin: 0;
+            color:#000
+        }
+
+        header nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #2d6a4f;
+        }
+    </style>
+  </head>
+  <body>
+
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="./imagens/ArcaLab2.png" alt="ArcaLab Logo">
+            </a>
+            <h2>ArcaLab</h2>
+        </div>
+    </header>
+
+    <div class="container">
+      <h1>O Ciclo da Água</h1>
+      <p>O ciclo da água é um processo natural que envolve a evaporação, condensação e precipitação da água na Terra.</p>
+      <h2>Fases do Ciclo</h2>
+      <ul>
+        <li><strong>Evaporação:</strong> A água dos oceanos, rios e lagos evapora devido ao calor do sol.</li>
+        <li><strong>Condensação:</strong> O vapor de água sobe e se resfria, formando nuvens.</li>
+        <li><strong>Precipitação:</strong> Quando as nuvens ficam pesadas, a água cai na forma de chuva, neve ou granizo.</li>
+      </ul>
+      <img src="https://arvoreagua.org/wp-content/uploads/2023/07/IMG-20230612-WA0007.jpg" alt="Ciclo da Água" width="500" height="300">
+      <h2>Importância do Ciclo da Água</h2>
+      <p>O ciclo da água é essencial para a manutenção da vida, pois fornece água potável e regula o clima.</p>
+      <h2>Curiosidades</h2>
+      <ul>
+        <li>A Água cobre mais de <em>70%</em> da superfície terrestre, sendo 97% Água salgada e 2% Água doce</li>
+        <img src="https://static.escolakids.uol.com.br/2019/04/distribuicao-agua.jpg" alt="Gráfico de Distribuição da Água" width="500" height="300">
+        <li>A Água pode existir em três estados: líquido, sólido (gelo) e gasoso (vapor)</li>
+        <img src="https://www.infoescola.com/wp-content/uploads/2007/02/estados-materia.jpg" alt="Estados da Matéria" width="500" height="300">
+      </ul>
+      <h2>Perguntas</h2>
+      <div class="pergunta">
+        <p>Quantos porcentos de água doce tem no planeta?</p>
+        <label><input type="radio" name="q1" value="a"> 2%</label>
+        <label><input type="radio" name="q1" value="b"> 70%</label>
+        <label><input type="radio" name="q1" value="c"> 30%</label>
+        <label><input type="radio" name="q1" value="d"> 40%</label>
+      </div>
+      <div class="pergunta">
+        <p>Quais são os três estados da água?</p>
+        <label><input type="radio" name="q2" value="a"> Preposição, chuva e neve</label>
+        <label><input type="radio" name="q2" value="b"> Precipitação, vapor e líquido</label>
+        <label><input type="radio" name="q2" value="c"> Sólido, líquido e chuvoso</label>
+        <label><input type="radio" name="q2" value="d"> Sólido, líquido e gasoso</label>
+      </div>
+      <div class="pergunta">
+        <p>Qual é o outro nome para a chuva?</p>
+        <label><input type="radio" name="q3" value="a"> Preposição</label>
+        <label><input type="radio" name="q3" value="b"> Precipitação</label>
+        <label><input type="radio" name="q3" value="c"> Chuvisco</label>
+        <label><input type="radio" name="q3" value="d"> Nuvem</label>
+      </div>
+      <button onclick="verificarRespostas()">Verificar Respostas</button>
+      <button id="reset-btn" onclick="resetQuiz()">Reset</button>
+      <div id="resultado"></div>
+    </div>
+
+    <script>
+      function verificarRespostas() {
+        let respostasCorretas = 0;
+        const perguntas = document.querySelectorAll('.pergunta');
+        perguntas.forEach((pergunta, index) => {
+          pergunta.classList.remove('correta', 'errada');
+          const selected = pergunta.querySelector('input:checked');
+          let correta = false;
+          if (selected) {
+            const resposta = selected.value;
+            if (index === 0 && resposta === 'a') {
+              respostasCorretas++; correta = true;
+            } else if (index === 1 && resposta === 'd') {
+              respostasCorretas++; correta = true;
+            } else if (index === 2 && resposta === 'b') {
+              respostasCorretas++; correta = true;
+            }
+            pergunta.classList.add(correta ? 'correta' : 'errada');
+          }
+        });
+        document.getElementById('resultado').textContent =
+          `Você acertou ${respostasCorretas} de ${perguntas.length} perguntas.`;
+      }
+      function resetQuiz() {
+        const perguntas = document.querySelectorAll('.pergunta');
+        perguntas.forEach(pergunta => {
+          pergunta.classList.remove('correta', 'errada');
+          pergunta.querySelectorAll('input[type="radio"]').forEach(input => input.checked = false);
+        });
+        document.getElementById('resultado').textContent = '';
+      }
+    </script>
+
+    <div>
+      <p>Desenvolvido e escrito por <a href="gaby.html" target="_blank">Gabrielly Barros</a></p>
+      <p>Fontes: <a href="https://arvoreagua.org/o-ciclo-da-agua/" target="_blank">Árvore Água</a>, <a href="https://www.infoescola.com/geografia/ciclo-da-agua/" target="_blank">InfoEscola</a></p>
+      <p>Veja também: <a href="solo.html" target="_blank">O Solo</a></p>
+      <img src="./imagens/ArcaLab.png" alt="Logo do ArcaLab" width="100" height="50">
+    </div>
+  </body>
+</html>

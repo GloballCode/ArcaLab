@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do ArcaLab - Perfis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="ArcaLab2.png">
+    <style>
+        body {
+            background-color: #81bcae;
+            font-family: "Ubuntu", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: "Ubuntu", sans-serif;
+            text-align: center;
+        }
+        p {
+            font-family: "Roboto", sans-serif;
+        }
+
+        header {
+            width: 100%;
+            background-color: #ffffffdd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            position: sticky;  
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .logo img {
+            width: 40px;
+            height: auto;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #000000dd; 
+        }
+
+        header nav ul li a:hover {
+            color: #000000; 
+        }
+
+        header h2 {
+            font-family: "Ubuntu", sans-serif;
+            margin: 0;
+        }
+
+        /* Container dos perfis */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .perfil {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            flex: 1 1 300px;
+            max-width: 300px;
+            padding: 15px;
+        }
+
+        .perfil:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .perfil img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body> 
+    <header>
+        <div class="logo">
+            <a href="index.html" target="_blank">
+                <img src="ArcaLab2.png" alt="Logo do ArcaLab">
+            </a>
+            <h2>Blog do ArcaLab</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="posts.html">Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Membros do ArcaLab</h1>
+    <div class="container">
+        <!-- Perfil Gabrielly -->
+        <div class="perfil" onclick="window.location.href='gaby.html'" target="_blank">
+            <h2>Gabrielly Barros</h2>
+            <img src="fotoGaby..jpg" alt="Foto de Gabrielly Barros">
+        </div>
+
+        <!-- Perfil Valentim -->
+        <div class="perfil" onclick="window.location.href='vah.html'" target="_blank">
+            <h2>Valentin Gasparetto</h2>
+            <img src="fotoVah.jpg" alt="Foto de Valentim Gasparetto">
+        </div>
+
+        <!-- Perfil Nathan -->
+        <div class="perfil" onclick="window.location.href='nathan.html'" target="_blank">
+            <h2>Nathan Edu</h2>
+            <img src="cartaoNathan.jpg" alt="SEM FOTO">
+        </div>
+        
+        <!-- Perfil Ozeias -->
+        <div class="perfil" onclick="window.location.href='ozeias.html'" target="_blank">
+            <h2>Ozeias Bittencourt</h2>
+            <img src="fotoOzeias.png" alt="SEM FOTO">
+        </div>
+    </div>
+
+</body>
+</html>
